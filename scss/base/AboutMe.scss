@@ -1,0 +1,66 @@
+@import 'module/var';
+@import 'module/mixins';
+
+
+.AboutMe{
+    display: flex;
+    justify-content: space-between;
+    @include paddingLR(60px,60px);
+    @include paddingTB($MainMarginTB+15px,$MainMarginTB+35px);
+    background-color: #f1f1f1;
+}
+.aboutMePic{
+    box-shadow: 29px 33px #B8EDF8;
+    width:390px;
+    height: 295px;
+}
+
+.aboutMeTitle{
+    font-family: 'BPG Glaho WEB Caps';
+    font-size: 25px;
+}
+.aboutMeTitle::after{
+    content: '';
+    display: block;
+    width:70px;
+    height:2px;
+    background-color: black;
+    @include marginTB(15px,55px);
+}
+
+
+.aboutMeText{
+    font-family: 'BPG Nino Mkhedruli Book' sans-serif;
+    font-size: 12px;
+    line-height: 20px;
+    color: #666666;
+    width: 100%;
+}
+.aboutMeDiv{
+    margin-left: 150px;
+}
+
+
+@media (max-width:960px){
+ .AboutMe{
+     flex-wrap: wrap;
+ }
+ .aboutMeDiv{
+     margin-top: 55px;
+    margin-left: 0px;
+}
+
+
+
+}
+
+
+@media (max-width:600px){
+.aboutMePic{
+    width: 255px;
+    height: 177px;
+    box-shadow: 23px 22px #B8EDF8;
+}
+   
+   
+   }

@@ -1,0 +1,47 @@
+@import 'module/var';
+@import 'module/mixins';
+
+.banner{
+    background-image: url('../Img/header.png');
+	background-position: center;
+	background-attachment:fixed; 
+	background-size: cover;
+	height: 500px;
+	width: 100%;
+	background-repeat: no-repeat;
+}
+.BanImg{
+	position: relative;
+}
+.banDiv{
+	color: white;
+    position: absolute;
+    width: fit-content;
+	width: 100%;
+    top: 38%;
+    z-index: 0;
+}
+.bannerTitle{
+	font-family: "BPG Glaho WEB Caps", sans-serif;
+	font-size: 35px;
+    text-align: center;
+    width: 100%;
+}
+.bannerP{
+	text-align: center;
+	font-family: "BPG Nino Mkhedruli Book", sans-serif;
+	font-size: 25px;
+	margin-top: 10px;
+	
+}
+
+@media  (max-width:580px) {
+	.bannerTitle{
+		font-size: 25px;
+	}
+	.bannerP{
+		font-size: 18px;
+	}
+		 
+	}
+		

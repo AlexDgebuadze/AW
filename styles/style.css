@@ -1,0 +1,433 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.Header_Logo {
+  margin-left: 5px;
+  margin-right: 0;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 192px;
+  height: 36px; }
+
+.navbar-header::before {
+  content: none !important; }
+
+.navbar::before {
+  content: none !important; }
+
+.navbar-default::before {
+  content: none !important; }
+
+.navbar-header::after {
+  content: none !important; }
+
+.navbar-collapse::after {
+  content: none !important; }
+
+.navbar-collapse::before {
+  content: none !important; }
+
+.nav::before {
+  content: none !important; }
+
+.nav::after {
+  content: none !important; }
+
+.navbar::before {
+  content: none !important; }
+
+.navbar::after {
+  content: none !important; }
+
+.navbar-collapse {
+  padding: 0;
+  flex-basis: 0%;
+  flex-grow: 0; }
+
+.navbar-nav {
+  flex-direction: inherit !important; }
+
+.nav {
+  width: 674px;
+  padding-top: 12px; }
+
+.navbar-toggle {
+  height: 76px;
+  margin-top: 0;
+  border-color: #B8EDF8 !important;
+  background-color: transparent;
+  margin: 0 !important;
+  padding: 31px 24px; }
+
+.navbar {
+  padding: 0px !important;
+  margin-bottom: 0px !important;
+  align-items: center !important; }
+
+.navbar-brand {
+  height: fit-content !important; }
+
+.icon-bar {
+  background-color: #B8EDF8 !important; }
+
+.nav_li a {
+  font-family: "BPG Glaho WEB Caps", sans-serif;
+  font-size: 20px;
+  color: black !important;
+  display: inline-block; }
+
+.link:hover {
+  color: #B8EDF8 !important; }
+
+@media (max-width: 964px) {
+  .link {
+    color: black; }
+  .nav_li {
+    font-size: 15px;
+    text-align: center; }
+  .navbar-header {
+    width: 100% !important; } }
+
+@media (max-width: 752px) {
+  .navbar-collapse {
+    background-color: #B8EDF8; }
+  .navbar-nav {
+    flex-direction: row !important; }
+  .nav {
+    display: inline; }
+  .navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 0; } }
+
+@media (max-width: 998px) {
+  .navbar-collapse + .collapse {
+    width: auto;
+    border-top: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    display: block !important;
+    height: auto !important;
+    padding-bottom: 0;
+    overflow: visible !important; } }
+
+.banner {
+  background-image: url("../Img/header.png");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 500px;
+  width: 100%;
+  background-repeat: no-repeat; }
+
+.BanImg {
+  position: relative; }
+
+.banDiv {
+  color: white;
+  position: absolute;
+  width: fit-content;
+  width: 100%;
+  top: 38%;
+  z-index: 0; }
+
+.bannerTitle {
+  font-family: "BPG Glaho WEB Caps", sans-serif;
+  font-size: 35px;
+  text-align: center;
+  width: 100%; }
+
+.bannerP {
+  text-align: center;
+  font-family: "BPG Nino Mkhedruli Book", sans-serif;
+  font-size: 25px;
+  margin-top: 10px; }
+
+@media (max-width: 580px) {
+  .bannerTitle {
+    font-size: 25px; }
+  .bannerP {
+    font-size: 18px; } }
+
+.WhatIDo {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: 60px;
+  margin-right: 60px;
+  text-align: center;
+  line-height: 43px; }
+
+.MainP {
+  font-family: 'BPG Glaho WEB Caps', sans-serif;
+  font-size: 25px;
+  margin-bottom: 25px;
+  width: 98%;
+  text-align: center; }
+
+.MainP::after {
+  content: '';
+  margin: 0 auto;
+  display: block;
+  width: 70px;
+  height: 2px;
+  background-color: black;
+  margin-top: 15px;
+  margin-bottom: 8px; }
+
+.tabsMainDiv {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+
+.Mtab {
+  border-color: black;
+  border-style: solid;
+  border-width: 2px;
+  margin-bottom: 15px; }
+
+.MtabImg {
+  margin-top: 20px;
+  height: 93px; }
+
+.MtabTitle::before {
+  content: ' ';
+  margin: 0 auto;
+  display: block;
+  width: 35px;
+  height: 2px;
+  background-color: skyblue;
+  margin-top: 18px;
+  margin-bottom: 18px; }
+
+.MtabTitle {
+  color: black;
+  font-family: "BPG Glaho WEB Caps", sans-serif;
+  font-size: 20px;
+  margin-bottom: 2%; }
+
+.MtabText {
+  color: #666666;
+  width: 300px;
+  text-align: center;
+  font-family: "BPG Nino Mkhedruli Book", sans-serif;
+  font-size: 15px;
+  line-height: 21px;
+  margin-bottom: 25px;
+  padding-left: 20px;
+  padding-right: 20px; }
+
+.Mtab:hover {
+  background-color: dodgerblue; }
+
+@media (max-width: 712px) {
+  .tabsMainDiv {
+    justify-content: center; } }
+
+.MyWorks {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: 60px;
+  margin-right: 60px; }
+
+.DivMyWorksPhotos {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+
+.MyWorksPhotos {
+  margin-bottom: 15px;
+  width: 393px;
+  position: relative; }
+
+.overlayImg {
+  position: absolute;
+  width: 88px;
+  height: 68px;
+  top: 27%;
+  left: 40%; }
+
+.overlayText {
+  color: white;
+  font-family: 'BPG Glaho WEB Caps';
+  font-size: 18px;
+  position: absolute;
+  top: 72%;
+  left: 24%; }
+
+.photoDiv {
+  position: relative;
+  height: auto; }
+
+.overlay {
+  background-color: rgba(184, 237, 248, 0.7);
+  width: 100%;
+  height: 91%;
+  position: absolute;
+  top: 0.5%;
+  left: 0%;
+  text-align: center;
+  opacity: 0; }
+
+.photoDiv:hover .overlay {
+  opacity: 1 !important; }
+
+@media (max-width: 712px) {
+  .DivMyWorksPhotos {
+    justify-content: center; } }
+
+.AboutMe {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 40px;
+  padding-bottom: 60px;
+  background-color: #f1f1f1; }
+
+.aboutMePic {
+  box-shadow: 29px 33px #B8EDF8;
+  width: 390px;
+  height: 295px; }
+
+.aboutMeTitle {
+  font-family: 'BPG Glaho WEB Caps';
+  font-size: 25px; }
+
+.aboutMeTitle::after {
+  content: '';
+  display: block;
+  width: 70px;
+  height: 2px;
+  background-color: black;
+  margin-top: 15px;
+  margin-bottom: 55px; }
+
+.aboutMeText {
+  font-family: 'BPG Nino Mkhedruli Book' sans-serif;
+  font-size: 12px;
+  line-height: 20px;
+  color: #666666;
+  width: 100%; }
+
+.aboutMeDiv {
+  margin-left: 150px; }
+
+@media (max-width: 960px) {
+  .AboutMe {
+    flex-wrap: wrap; }
+  .aboutMeDiv {
+    margin-top: 55px;
+    margin-left: 0px; } }
+
+@media (max-width: 600px) {
+  .aboutMePic {
+    width: 255px;
+    height: 177px;
+    box-shadow: 23px 22px #B8EDF8; } }
+
+.contact {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 60px;
+  padding-right: 60px;
+  background-color: #B8EDF8; }
+
+.NormIn {
+  font-family: "BPG Nino Mkhedruli Book", sans-serif;
+  background-color: transparent;
+  display: block;
+  margin: 0 auto;
+  width: 48%;
+  height: 35px;
+  margin-top: 30px;
+  border: 1.5px solid black;
+  color: #666666; }
+
+.LargeIn {
+  font-family: "BPG Nino Mkhedruli Book", sans-serif;
+  background-color: transparent;
+  display: block;
+  margin: 0 auto;
+  width: 48%;
+  height: 111px;
+  margin-top: 30px;
+  border: 1.5px solid black;
+  color: #666666; }
+
+.aft {
+  align-items: center;
+  margin-top: 4%;
+  padding-left: 30%;
+  padding-right: 30%;
+  width: 100%;
+  justify-content: space-between;
+  display: flex; }
+
+.btn {
+  background-color: #7EC4CE;
+  color: white; }
+
+.contP {
+  font-size: 14px; }
+
+footer {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
+  justify-content: space-between;
+  display: flex;
+  background-color: black;
+  align-items: center; }
+
+.footerT {
+  font-size: 14px;
+  font-family: 'BPG Nino Mkhedruli Book';
+  color: white; }
+
+@font-face {
+  font-family: 'BPG Glaho WEB Caps';
+  src: url("../fonts/BPGGlahoWEBCaps.eot");
+  src: url("../fonts/BPGGlahoWEBCaps.eot?#iefix") format("embedded-opentype"), url("../fonts/BPGGlahoWEBCaps.woff2") format("woff2"), url("../fonts/BPGGlahoWEBCaps.woff") format("woff"), url("../fonts/BPGGlahoWEBCaps.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'BPG Nino Mkhedruli Book';
+  src: url("../fonts/BPGNinoMkhedruliBook.eot");
+  src: url("../fonts/BPGNinoMkhedruliBook.eot?#iefix") format("embedded-opentype"), url("../fonts/BPGNinoMkhedruliBook.woff2") format("woff2"), url("../fonts/BPGNinoMkhedruliBook.woff") format("woff"), url("../fonts/BPGNinoMkhedruliBook.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic; }

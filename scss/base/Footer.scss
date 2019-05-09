@@ -1,0 +1,19 @@
+@import 'module/var';
+@import 'module/mixins';
+
+
+footer{
+    @include paddingTB(25px,25px);
+    @include paddingLR(25px,25px);
+    justify-content: space-between;    
+    display: flex;
+    background-color: black;
+    align-items: center;
+}
+.footerT{
+    font-size: 14px;
+    font-family: 'BPG Nino Mkhedruli Book';
+    color: white;
+
+}
+

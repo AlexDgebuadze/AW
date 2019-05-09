@@ -1,0 +1,48 @@
+@import 'module/var';
+@import 'module/mixins';
+
+.contact{
+    @include paddingTB($MainMarginTB+15px,$MainMarginTB+15px);
+    @include paddingLR(60px,60px);
+    background-color: #B8EDF8;
+}
+.NormIn{
+    font-family: "BPG Nino Mkhedruli Book", sans-serif;
+    background-color: transparent;
+    display: block;
+    margin: 0 auto;
+    width: 48%;
+    height: 35px;
+    margin-top : 30px;
+    border: 1.5px solid black;
+    color: #666666;
+}
+.LargeIn{
+    font-family: "BPG Nino Mkhedruli Book", sans-serif;
+    background-color: transparent;
+    display: block;
+    margin: 0 auto;
+    width: 48%;
+    height: 111px;
+    margin-top: 30px;
+    border: 1.5px solid black;
+    color: #666666;
+    
+}
+.aft{
+    align-items: center;
+    margin-top: 4%;
+    padding-left: 30%;
+    padding-right: 30%;
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+}
+.btn{
+    background-color: #7EC4CE;
+    color: white;
+
+}
+.contP{
+    font-size: 14px;
+}

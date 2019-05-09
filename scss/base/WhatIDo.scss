@@ -1,0 +1,79 @@
+@import 'module/var';
+@import 'module/mixins';
+
+
+.WhatIDo{
+    @include marginTB($MainMarginTB+15px,$MainMarginTB+15px);
+    @include marginLR(60px,60px);
+    text-align: center;
+    line-height: 43px;
+}
+.MainP{
+    font-family: 'BPG Glaho WEB Caps', sans-serif;
+    font-size: $LargeFontSize;
+    margin-bottom: 25px;
+    width: 98%;
+    text-align: center;
+}
+.MainP::after{
+    content: '';
+    margin: 0 auto;
+    display: block;
+    width:70px;
+    height:2px;
+    background-color: black;
+    @include marginTB(15px,8px);
+}
+.tabsMainDiv{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.Mtab{
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+    margin-bottom: 15px;
+}
+
+.MtabImg{
+    margin-top: 20px;
+    height: 93px;
+}
+.MtabTitle::before{
+    content: ' ';
+    margin: 0 auto;
+    display: block;
+    width:35px;
+    height:2px;
+    background-color: skyblue;
+    @include marginTB(18px,18px);
+   
+}
+.MtabTitle{
+    color: black;
+    font-family: "BPG Glaho WEB Caps", sans-serif;
+    font-size: 20px;
+    margin-bottom: 2%;
+}
+.MtabText{
+    color: #666666;
+    width: 300px;
+    text-align: center;
+    font-family: "BPG Nino Mkhedruli Book", sans-serif;
+    font-size: 15px;
+    line-height: 21px;
+    margin-bottom: 25px;
+    @include paddingLR(20px,20px);
+
+}   
+.Mtab:hover{
+       
+    background-color:dodgerblue;
+    
+}
+@media (max-width:712px){
+    .tabsMainDiv{
+        justify-content: center;
+    }
+}
