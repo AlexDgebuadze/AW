@@ -11,7 +11,7 @@
     background-color: transparent;
     display: block;
     margin: 0 auto;
-    width: 48%;
+    width: 50%;
     height: 35px;
     margin-top : 30px;
     border: 1.5px solid black;
@@ -22,7 +22,7 @@
     background-color: transparent;
     display: block;
     margin: 0 auto;
-    width: 48%;
+    width: 50%;
     height: 111px;
     margin-top: 30px;
     border: 1.5px solid black;
@@ -31,12 +31,11 @@
 }
 .aft{
     align-items: center;
-    margin-top: 3.5%;
-    padding-left: 26%;
-    padding-right: 26%;
-    width: 100%;
+    padding-top: 15px;
+    width: 50%;
     justify-content: space-between;
     display: flex;
+    margin: 0 auto !important;
 }
 .btn{
     background-color: #7EC4CE;
@@ -53,51 +52,39 @@
     .contact{
     @include paddingLR($ResMargin,$ResMargin);
     }
-    .NormIn{
-        width: 300px;
-    }
-    .LargeIn{
-        width: 300px;
-    }
     .contP{
         font-size: 12px;
     }
-    .aft{
-        margin-top: 2%;
-        padding-left: 29%;
-        padding-right: 29%;
-    }
     .btn{
-        width: 80px;
+        width: 85px;
     }
 }
-@media (max-width:700px){
-    .aft{
-    padding-left: 23%;
-    padding-right: 23%;
-    }
-}
-@media (max-width:700px){
-    .aft{
-    padding-left: 18%;
-    padding-right: 18%;
-    }
-}
-@media (max-width:490px){
-    .aft{
-    padding-left: 8%;
-    padding-right: 8%;
-    }
-}
-@media (max-width:420px){
+
+@media (max-width:725px){
     .NormIn{
-        width: 260px;
+        width: 320px;
     }
     .LargeIn{
-        width: 260px;
+        width: 320px;
     }
     .aft{
-    padding-left: 3%;
-    padding-right: 3%;
+        width: 320px;
+    }
+}
+@media (max-width:380px){
+    .NormIn{
+        width: 280px;
+    }
+    .LargeIn{
+        width: 280px;
+    }
+    .aft{
+        width: 280px;
+    }
+    .btn{
+        width: 82px;
+    }
+    .contP{
+        font-size: 11px;
     }
 }

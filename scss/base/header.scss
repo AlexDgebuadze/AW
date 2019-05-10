@@ -11,6 +11,12 @@ width: 192px;
 height: 36px;
 }
 
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
 
 
 .navbar-header::before{
@@ -53,7 +59,7 @@ content: none !important;
     flex-direction: 70px !important;
 }
 .nav{
-    width:674px;
+    width:679px;
     padding-top: 12px;
     display: inline-block;
 }
@@ -135,7 +141,7 @@ content: none !important;
       text-align: center;
   }
   .nav{
-      width: 477px;
+      width: 497px;
   }
   .nav>li>a {
     padding: 8px 8px;
