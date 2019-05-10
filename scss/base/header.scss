@@ -50,11 +50,12 @@ content: none !important;
      flex-grow: 0;
 }
 .navbar-nav{
-    flex-direction: inherit !important;
+    flex-direction: 70px !important;
 }
 .nav{
     width:674px;
     padding-top: 12px;
+    display: inline-block;
 }
 .navbar-toggle{
     height: 76px;
@@ -70,7 +71,7 @@ content: none !important;
     align-items: center !important;
 }
 .navbar-brand{
-    height: fit-content !important;
+    height: 78px !important;
 } 
 .icon-bar{
     background-color: #B8EDF8 !important;
@@ -81,13 +82,12 @@ content: none !important;
     font-size: 20px;
     color: black !important;
     display: inline-block;
-
 }
 .link:hover{      
     color: #B8EDF8 !important ;
 }
 
-// @media (max-width:720px){
+// @media (max-width:1200px){
 //         .navbar-header {
 //             float: none;
 //         }
@@ -134,15 +134,24 @@ content: none !important;
       font-size: 15px;
       text-align: center;
   }
-  .navbar-header{
-      width: 100% !important;
+  .nav{
+      width: 477px;
   }
-  
+  .nav>li>a {
+    padding: 8px 8px;
+}
+  .navbar-header{
+      width: 24%;
+  }
+  .nav_li a{
+    font-size: 15px;
+}
+
  
       
  }
         
- @media  (max-width:752px) {
+ @media  (max-width:767px) {
 
     .navbar-collapse{
         background-color:  #B8EDF8;
@@ -157,19 +166,14 @@ content: none !important;
         flex-basis: 100%;
         flex-grow: 0;
     }
+    .navbar-header{
+        width: 100% !important;
+    }
+    .Header_Logo{
+        width: 170px;
+    }
    }
       
 
-   @media (max-width: 998px){
-   .navbar-collapse + .collapse {
-    width: auto;
-    border-top: 0;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-       display: block!important;
-       height: auto!important;
-       padding-bottom: 0;
-       overflow: visible!important;
-   }
-}
+  
         

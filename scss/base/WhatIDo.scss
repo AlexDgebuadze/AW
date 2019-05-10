@@ -12,7 +12,7 @@
     font-family: 'BPG Glaho WEB Caps', sans-serif;
     font-size: $LargeFontSize;
     margin-bottom: 25px;
-    width: 98%;
+    width: 100%;
     text-align: center;
 }
 .MainP::after{
@@ -68,12 +68,27 @@
 
 }   
 .Mtab:hover{
-       
-    background-color:dodgerblue;
-    
+    background-color:skyblue;
+    -ms-transform: scale(1.1); 
+    -webkit-transform: scale(1.1); 
+    transform: scale(1.1); 
 }
 @media (max-width:712px){
     .tabsMainDiv{
         justify-content: center;
+    }
+    .MtabText{
+        width: 260px;
+    }
+    .WhatIDo{
+        @include marginLR($ResMargin,$ResMargin);
+    }
+    .MainP{
+        font-size: $ResFontSize;
+        margin-bottom: 20px;
+    }
+    .MtabTitle{
+        font-size: 18px;
+        
     }
 }

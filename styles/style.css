@@ -75,15 +75,22 @@ table {
 
 .navbar-collapse {
   padding: 0;
-  flex-basis: 0%;
-  flex-grow: 0; }
+  -ms-flex-preferred-size: 0%;
+      flex-basis: 0%;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0; }
 
 .navbar-nav {
-  flex-direction: inherit !important; }
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: 70px !important;
+          flex-direction: 70px !important; }
 
 .nav {
   width: 674px;
-  padding-top: 12px; }
+  padding-top: 12px;
+  display: inline-block; }
 
 .navbar-toggle {
   height: 76px;
@@ -96,10 +103,12 @@ table {
 .navbar {
   padding: 0px !important;
   margin-bottom: 0px !important;
-  align-items: center !important; }
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important; }
 
 .navbar-brand {
-  height: fit-content !important; }
+  height: 78px !important; }
 
 .icon-bar {
   background-color: #B8EDF8 !important; }
@@ -119,30 +128,35 @@ table {
   .nav_li {
     font-size: 15px;
     text-align: center; }
+  .nav {
+    width: 477px; }
+  .nav > li > a {
+    padding: 8px 8px; }
   .navbar-header {
-    width: 100% !important; } }
+    width: 24%; }
+  .nav_li a {
+    font-size: 15px; } }
 
-@media (max-width: 752px) {
+@media (max-width: 767px) {
   .navbar-collapse {
     background-color: #B8EDF8; }
   .navbar-nav {
-    flex-direction: row !important; }
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important; }
   .nav {
     display: inline; }
   .navbar-collapse {
-    flex-basis: 100%;
-    flex-grow: 0; } }
-
-@media (max-width: 998px) {
-  .navbar-collapse + .collapse {
-    width: auto;
-    border-top: 0;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    display: block !important;
-    height: auto !important;
-    padding-bottom: 0;
-    overflow: visible !important; } }
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0; }
+  .navbar-header {
+    width: 100% !important; }
+  .Header_Logo {
+    width: 170px; } }
 
 .banner {
   background-image: url("../Img/header.png");
@@ -159,6 +173,8 @@ table {
 .banDiv {
   color: white;
   position: absolute;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   width: 100%;
   top: 38%;
@@ -182,6 +198,14 @@ table {
   .bannerP {
     font-size: 18px; } }
 
+@media (max-width: 403px) {
+  .banner {
+    height: 380px; }
+  .bannerTitle {
+    font-size: 20px; }
+  .bannerP {
+    font-size: 15px; } }
+
 .WhatIDo {
   margin-top: 40px;
   margin-bottom: 40px;
@@ -194,7 +218,7 @@ table {
   font-family: 'BPG Glaho WEB Caps', sans-serif;
   font-size: 25px;
   margin-bottom: 25px;
-  width: 98%;
+  width: 100%;
   text-align: center; }
 
 .MainP::after {
@@ -208,9 +232,14 @@ table {
   margin-bottom: 8px; }
 
 .tabsMainDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap; }
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
 
 .Mtab {
   border-color: black;
@@ -250,11 +279,26 @@ table {
   padding-right: 20px; }
 
 .Mtab:hover {
-  background-color: dodgerblue; }
+  background-color: skyblue;
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1); }
 
 @media (max-width: 712px) {
   .tabsMainDiv {
-    justify-content: center; } }
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .MtabText {
+    width: 260px; }
+  .WhatIDo {
+    margin-left: 40px;
+    margin-right: 40px; }
+  .MainP {
+    font-size: 20px;
+    margin-bottom: 20px; }
+  .MtabTitle {
+    font-size: 18px; } }
 
 .MyWorks {
   margin-top: 40px;
@@ -263,9 +307,13 @@ table {
   margin-right: 60px; }
 
 .DivMyWorksPhotos {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap; }
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
 
 .MyWorksPhotos {
   margin-bottom: 15px;
@@ -306,11 +354,32 @@ table {
 
 @media (max-width: 712px) {
   .DivMyWorksPhotos {
-    justify-content: center; } }
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .MyWorks {
+    margin-left: 40px;
+    margin-right: 40px; } }
+
+@media (max-width: 510px) {
+  .MyWorksPhotos {
+    width: 300px; }
+  .overlayText {
+    left: 18%;
+    font-size: 17px; }
+  .overlayImg {
+    width: 78px;
+    height: 62px;
+    top: 21%;
+    left: 39%; } }
 
 .AboutMe {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding-left: 60px;
   padding-right: 60px;
   padding-top: 40px;
@@ -318,7 +387,8 @@ table {
   background-color: #f1f1f1; }
 
 .aboutMePic {
-  box-shadow: 29px 33px #B8EDF8;
+  -webkit-box-shadow: 29px 33px #B8EDF8;
+          box-shadow: 29px 33px #B8EDF8;
   width: 390px;
   height: 295px; }
 
@@ -347,16 +417,27 @@ table {
 
 @media (max-width: 960px) {
   .AboutMe {
-    flex-wrap: wrap; }
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-left: 40px;
+    padding-right: 40px; }
   .aboutMeDiv {
     margin-top: 55px;
-    margin-left: 0px; } }
+    margin-left: 0px; }
+  .aboutMeTitle {
+    font-size: 20px; }
+  .aboutMeTitle::after {
+    margin-bottom: 35px; } }
 
 @media (max-width: 600px) {
   .aboutMePic {
     width: 255px;
     height: 177px;
-    box-shadow: 23px 22px #B8EDF8; } }
+    -webkit-box-shadow: 23px 22px #B8EDF8;
+            box-shadow: 23px 22px #B8EDF8; } }
 
 .contact {
   padding-top: 40px;
@@ -388,35 +469,101 @@ table {
   color: #666666; }
 
 .aft {
-  align-items: center;
-  margin-top: 4%;
-  padding-left: 30%;
-  padding-right: 30%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 3.5%;
+  padding-left: 26%;
+  padding-right: 26%;
   width: 100%;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex; }
 
 .btn {
   background-color: #7EC4CE;
   color: white; }
 
+.btn:hover {
+  background-color: white;
+  color: #7EC4CE; }
+
 .contP {
   font-size: 14px; }
+
+@media (max-width: 835px) {
+  .contact {
+    padding-left: 40px;
+    padding-right: 40px; }
+  .NormIn {
+    width: 300px; }
+  .LargeIn {
+    width: 300px; }
+  .contP {
+    font-size: 12px; }
+  .aft {
+    margin-top: 2%;
+    padding-left: 29%;
+    padding-right: 29%; }
+  .btn {
+    width: 80px; } }
+
+@media (max-width: 700px) {
+  .aft {
+    padding-left: 23%;
+    padding-right: 23%; } }
+
+@media (max-width: 700px) {
+  .aft {
+    padding-left: 18%;
+    padding-right: 18%; } }
+
+@media (max-width: 490px) {
+  .aft {
+    padding-left: 8%;
+    padding-right: 8%; } }
+
+@media (max-width: 420px) {
+  .NormIn {
+    width: 260px; }
+  .LargeIn {
+    width: 260px; }
+  .aft {
+    padding-left: 3%;
+    padding-right: 3%; } }
 
 footer {
   padding-top: 25px;
   padding-bottom: 25px;
   padding-left: 25px;
   padding-right: 25px;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   background-color: black;
-  align-items: center; }
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .footerT {
   font-size: 14px;
   font-family: 'BPG Nino Mkhedruli Book';
   color: white; }
+
+@media (max-width: 600px) {
+  .Header_logo {
+    width: 135px; }
+  footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 8px;
+    padding-right: 5px; } }
 
 @font-face {
   font-family: 'BPG Glaho WEB Caps';

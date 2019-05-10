@@ -17,3 +17,14 @@ footer{
 
 }
 
+@media (max-width:600px){
+    .Header_logo{
+        width: 135px;
+    }
+    footer{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 8px;
+    padding-right: 5px;
+    }
+}

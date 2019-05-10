@@ -44,12 +44,19 @@
 @media (max-width:960px){
  .AboutMe{
      flex-wrap: wrap;
+     justify-content: center;
+     @include paddingLR($ResMargin,$ResMargin);
  }
  .aboutMeDiv{
      margin-top: 55px;
     margin-left: 0px;
 }
-
+ .aboutMeTitle{
+     font-size: $ResFontSize;
+ }
+ .aboutMeTitle::after{
+    margin-bottom: 35px;
+}
 
 
 }

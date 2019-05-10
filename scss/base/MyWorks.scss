@@ -61,4 +61,24 @@
     .DivMyWorksPhotos {
         justify-content: center;
     }
+    .MyWorks{
+        @include marginLR($ResMargin,$ResMargin);
     }
+    }
+
+@media (max-width:510px){
+    .MyWorksPhotos{
+        width: 300px;
+    }
+    .overlayText{
+        left: 18%;
+        font-size: 17px;
+    }
+    .overlayImg{
+    width: 78px;
+    height: 62px;
+    top: 21%;
+    left: 39%;
+    }
+
+}    
